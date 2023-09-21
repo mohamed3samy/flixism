@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="lib/swiper.css" />
+	<link rel="stylesheet" href="lib/fontawesome.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/spinner.css" />
+	<title>Flixism</title>
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div>
+				<a href="/">
+					<svg width="120" height="22" viewBox="0 0 120 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M15.002 4.39546V0.481481H0V25.6117H3.95364V15.0036H13.4861V11.0896H3.95364V4.39546H15.002Z"
+							fill="#F3F3F3" />
+						<path d="M22.1123 21.6667V0.543608H18.1586V25.5806H33.3481V21.6667H22.1123Z" fill="#F3F3F3" />
+						<path d="M36.5048 25.5806H40.4584V0.543608H36.5048V25.5806Z" fill="#F3F3F3" />
+						<path
+							d="M43.2556 25.5806H47.7875L53.6476 16.1374L59.5234 25.5806H64.0396L55.9448 12.5651L63.4926 0.543608H58.9295L53.6632 9.11709L48.3657 0.543608H43.8026L51.3504 12.5806L43.2556 25.5806Z"
+							fill="#F3F3F3" />
+						<path d="M66.8525 25.5806H70.8061V0.543608H66.8525V25.5806Z" fill="#F3F3F3" />
+						<path
+							d="M82.9327 26C88.0427 26 91.9182 23.1422 91.9182 18.7001C91.9182 14.7551 88.8241 12.8447 84.8392 11.1051C81.7763 9.80048 79.4478 9.10155 79.4478 7.14456C79.4478 5.37395 81.2918 3.94504 83.6046 3.94504C85.433 3.94504 87.1676 4.89247 87.949 6.58542L90.8868 4.56631C89.8554 1.8172 87.1676 0.09319 83.5734 0.09319C79.0415 0.09319 75.4629 2.95102 75.4629 7.05137C75.4629 10.9809 78.7446 12.503 81.6981 13.8076C84.636 15.0657 87.949 16.4636 87.949 18.7778C87.949 20.6882 85.808 22.0394 82.9796 22.0394C80.5574 22.0394 78.4633 20.9211 77.3382 18.9642L74.2128 21.1852C75.6505 24.0741 78.7915 26 82.9327 26Z"
+							fill="#F3F3F3" />
+						<path
+							d="M119.703 0L107.67 18.2031L95.6218 0H95.3249V25.5806H99.2786V11.6798L107.655 25.1613H107.686L116.046 11.6953V25.5806H120V0H119.703Z"
+							fill="#F3F3F3" />
+					</svg>
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a class="nav-link" href="/"></a>
+					</li>
+					<li>
+						<a class="nav-link" href="/shows.html"></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Search Movies -->
+	<section class="search">
+		<div class="container">
+			<div class="alert"></div>
+			<form action="/search.html" class="search-form">
+				<!-- movies and shows radio box -->
+				<div class="search-radio">
+					<input type="radio" id="movie" name="type" value="movie" checked />
+					<label for="movies">Movies</label>
+					<input type="radio" id="tv" name="type" value="tv" />
+					<label for="tv">TV Shows</label>
+				</div>
+				<div class="search-flex">
+					<input type="text" name="search-term" id="search-term" placeholder="Enter search term" />
+					<button class="btn" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- Search Results -->
+	<section id="search-results-wrapper" class="container">
+		<heading id="search-results-heading"></heading>
+		<div id="search-results" class="grid"></div>
+		<div id="pagination"></div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-text">
+				<p id="footer-text"></p>
+			</div>
+			<div class="social-links">
+				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<div class="spinner"></div>
+
+	<script src="js/script.js" defer></script>
+</body>
+
+</html>
